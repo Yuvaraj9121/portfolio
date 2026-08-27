@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kudupudi Yuvaraj - developer portfolio">
+  <title>Kudupudi Yuvaraj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#about" aria-label="Kudupudi Yuvaraj home">
+        <span class="brand-mark">KY</span>
+        <span>Kudupudi Yuvaraj</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="about">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Hello, I’m Yuvaraj <span class="eyebrow-line"></span></p>
+        <h1>Building clear ideas into <em>useful</em> digital experiences.</h1>
+        <p class="hero-text">I’m a curious developer who enjoys turning thoughtful design and solid code into products people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
+          <a class="text-link" href="#contact">Let’s talk <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-label="Abstract portrait placeholder">
+        <div class="photo-frame">
+          <!-- <span class="photo-fallback">KY</span> -->
+          <img src="" alt="Portrait of Kudupudi Yuvaraj" onerror="this.style.display='none'">
+        </div>
+        <div class="art-ring art-ring-one"></div>
+        <div class="art-ring art-ring-two"></div>
+        <div class="art-card">
+          <span class="art-label">Currently</span>
+          <strong>Learning.<br>Making.<br>Improving.</strong>
+          <!-- <span class="art-code">&lt;/&gt;</span> -->
+        </div>
+        <span class="art-dot dot-one"></span>
+        <span class="art-dot dot-two"></span>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I bring</p>
+          <h2>Skills with a practical edge.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-item reveal"><span class="skill-number">01</span><h3>Frontend</h3><p>HTML, CSS, JavaScript, responsive interfaces, and accessible interactions.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">02</span><h3>Problem solving</h3><p>Breaking big ideas into simple, testable steps that keep projects moving.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">03</span><h3>Always learning</h3><p>Exploring new tools, patterns, and perspectives to make better work.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">04</span><h3>Python</h3><p>Writing clean scripts and building practical solutions with Python.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">05</span><h3>SQL</h3><p>Organizing, querying, and understanding data with relational databases.</p></article>
+          <!-- <article class="skill-item reveal"><span class="skill-number">06</span><h3>Vibe coding</h3><p>Exploring ideas quickly and creatively while turning concepts into working products.</p></article> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading project-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>A few things I’ve made.</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-card-saffron reveal">
+          <div class="project-top"><span>  Deep Learning</span><span>↗</span></div>
+          <img src="./images/photo-1515162816999-a0c47dc192f7.avif" alt="Focus Flow app preview">
+          <div>
+            <h3>Automated Road Damage Detection</h3>
+            <p>Built a deep learning solution for detecting road damage from images, helping automate inspection and support faster maintenance planning.</p>
+            <a href="#contact">View project →</a>
+          </div>
+        </article>
+        <article class="project-card project-card-ink reveal">
+          <div class="project-top"><span>  Tool</span><span>↗</span></div>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data dashboard preview">
+          <div>
+            <h3>Fake Face Detection Using LBPNET</h3>
+            <p>Developed an LBPNET-based CNN model using Local Binary Pattern (LBP) features to classify images as genuine or fake, enabling automated fake-face detection.</p>
+            <a href="#contact">View project →</a>
+          </div>
+        </article>
+        <article class="project-card project-card-sky reveal">
+          <div class="project-top"><span>  Experiment</span><span>↗</span></div>
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Creative project preview">
+          <div>
+            <h3>Little moments</h3>
+            <p>An interactive study in motion, color, and the details between states.</p>
+            <a href="#contact">View project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal"><p class="eyebrow">Start a conversation</p>
+            <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
+            <p>Tell me a little about what you’re building. Your note will be saved securely in this browser database.</p>
+            <a class="contact-email" href="mailto:kudupudiyuvaraj.4@gmail.com">kudupudiyuvaraj.4@gmail.com</a>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+          <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><span>© <span id="year"></span> Kudupudi Yuvaraj</span><span>Made with intention.</span></footer>
+</body>
+</html>
