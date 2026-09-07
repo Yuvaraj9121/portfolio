@@ -12,6 +12,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <nav class="navbar container" aria-label="Primary navigation">
       <a class="brand" href="#about" aria-label="Kudupudi Yuvaraj home">
@@ -31,7 +32,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero section container" id="about">
       <div class="hero-copy reveal">
         <p class="eyebrow">Hello, I’m Yuvaraj <span class="eyebrow-line"></span></p>
@@ -42,10 +43,10 @@
           <a class="text-link" href="#contact">Let’s talk <span>→</span></a>
         </div>
       </div>
-      <div class="hero-art reveal" aria-label="Abstract portrait placeholder">
+      <div class="hero-art reveal" aria-hidden="true">
         <div class="photo-frame">
           <!-- <span class="photo-fallback">KY</span> -->
-          <img src="" alt="Portrait of Kudupudi Yuvaraj" onerror="this.style.display='none'">
+          <div class="photo-fallback" aria-hidden="true">KY</div>
         </div>
         <div class="art-ring art-ring-one"></div>
         <div class="art-ring art-ring-two"></div>
@@ -89,8 +90,8 @@
             <h3>Automated Road Damage Detection</h3>
             <p>Developed an automated road damage detection system using YOLO-based deep learning models to identify longitudinal cracks, transverse cracks, alligator cracks, and potholes from UAV images. The application provides a Tkinter-based interface for uploading test images and performing image-based inference, with support for comparing YOLOv5, YOLOv7, and YOLOv8 models using evaluation metrics such as precision, recall, and F1-score. The current implementation focuses on image-based inference rather than continuous real-time webcam or video-stream detection.</p>
 
-            <a href="https://automated-road-damage-jymhfucep3reckzxvycsft.streamlit.app/" target="_blank" rel="noreferrer">🚀 Live Demo →</a>
-            <a href="https://github.com/Yuvaraj9121/Automated-Road-Damage" target="_blank" rel="noreferrer">GitHub →</a>
+            <a href="https://automated-road-damage-jymhfucep3reckzxvycsft.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for Automated Road Damage Detection (opens in a new tab)">🚀 Live Demo →</a>
+            <a href="https://github.com/Yuvaraj9121/Automated-Road-Damage" target="_blank" rel="noopener noreferrer" aria-label="Open Automated Road Damage Detection GitHub repository (opens in a new tab)">GitHub →</a>
           </div>
         </article>
         <article class="project-card project-card-ink reveal">
@@ -99,16 +100,16 @@
           <div>
             <h3>Fake Face Detection Using LBPNET</h3>
             <p>Developed an LBP-based CNN (LBPNET) model to classify face images as fake or non-fake. The system extracts Local Binary Pattern (LBP) texture features from input face images and uses a CNN classifier to identify whether the image belongs to the fake-face or non-fake-face class. The model is designed specifically for the dataset used in this project and should not be interpreted as a general-purpose deepfake detector.</p>
-            <a href="https://github.com/Yuvaraj9121/Fake-Image_Detection" target="_blank" rel="noreferrer">View project →</a>
+            <a href="https://github.com/Yuvaraj9121/Fake-Image_Detection" target="_blank" rel="noopener noreferrer">View project →</a>
           </div>
         </article>
         <article class="project-card project-card-sky reveal">
           <div class="project-top"><span>Experiment</span><span>↗</span></div>
-          <img src="./images/image.3.png" alt="Creative project preview">
+          <img src="./images/image.3.png" alt="AI-assisted APT detection project interface">
           <div>
             <h3>AI-Assisted APT Detection (RANK)</h3>
             <p>AI-Assisted APT Detection: Developed an AI-based system using MITRE ATT&CK, alert correlation, and incident graphs to detect and prioritize cyber threats.</p>
-            <a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noreferrer">View project →</a>
+            <a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noopener noreferrer">View project →</a>
           </div>
         </article>
       </div>
@@ -118,7 +119,7 @@
       <div class="container contact-layout">
         <div class="contact-copy reveal"><p class="eyebrow">Start a conversation</p>
             <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
-            <p>Tell me a little about what you’re building. Your note will be saved securely in this browser database.</p>
+            <p>Tell me a little about what you’re building. Your note is saved locally in this browser only. It is not sent to me. To contact me directly, use the email address below.</p>
             <a class="contact-email" href="mailto:kudupudiyuvaraj.4@gmail.com">kudupudiyuvaraj.4@gmail.com</a>
         </div>
         <form class="contact-form reveal" id="contact-form">
