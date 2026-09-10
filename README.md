@@ -11,11 +11,13 @@ A dependency-free portfolio built with HTML, CSS, and JavaScript.
 
 ### Fake Face Detection Using LBPNET
 - GitHub: https://github.com/Yuvaraj9121/Fake-Image_Detection
+- Live demo: replace `YOUR_FAKE_FACE_STREAMLIT_URL` in `index.html` with the deployed Streamlit URL.
 - The model classifies fake/non-fake face images for the project dataset. It should not be presented as a general-purpose deepfake detector.
 
 ### AI-Assisted APT Detection (RANK)
 - GitHub: https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-
-- The repository contains the project implementation and documentation; a public live demo is not currently claimed.
+- Live demo: https://rank-ai.streamlit.app/
+- The repository contains the project implementation and documentation.
 
 ## Accessibility
 The portfolio is implemented with semantic navigation, labelled form controls, keyboard-visible focus styles, a skip link, mobile menu state, and reduced-motion support. These are implementation measures; browser-level WCAG testing should still be performed before making a formal accessibility conformance claim.

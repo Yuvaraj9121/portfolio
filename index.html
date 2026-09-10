@@ -29,6 +29,10 @@
         <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#contact">Contact</a>
       </div>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+        <span class="theme-label">Dark</span>
+      </button>
     </nav>
   </header>
 
@@ -64,10 +68,10 @@
           <h2>Skills with a practical edge.</h2>
         </div>
         <div class="skills-grid">
-          <article class="skill-item reveal"><span class="skill-number">01</span><h3>Frontend</h3><p>HTML, CSS, JavaScript, responsive interfaces, and usability-focused development.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">01</span><h3><a href="#projects">Frontend</a></h3><p>HTML, CSS, JavaScript, responsive interfaces, and usability-focused development, demonstrated by this portfolio.</p></article>
           <article class="skill-item reveal"><span class="skill-number">02</span><h3>Problem solving</h3><p>Breaking big ideas into simple, testable steps that keep projects moving.</p></article>
           <article class="skill-item reveal"><span class="skill-number">03</span><h3>Always learning</h3><p>Exploring new tools, patterns, and perspectives to make better work.</p></article>
-          <article class="skill-item reveal"><span class="skill-number">04</span><h3>Python</h3><p>Writing clean scripts and building practical solutions with Python.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">04</span><h3><a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noopener noreferrer">Python</a></h3><p>Writing clean scripts and building practical solutions with Python, demonstrated by the RANK project.</p></article>
           <article class="skill-item reveal"><span class="skill-number">05</span><h3>SQL</h3><p>Organizing, querying, and understanding data with relational databases.</p></article>
           <!-- <article class="skill-item reveal"><span class="skill-number">06</span><h3>Vibe coding</h3><p>Exploring ideas quickly and creatively while turning concepts into working products.</p></article> -->
         </div>
@@ -87,8 +91,17 @@
             <h3>Automated Road Damage Detection</h3>
             <p>Developed an automated road damage detection system using YOLO-based deep learning models to identify longitudinal cracks, transverse cracks, alligator cracks, and potholes from UAV images. The application provides a Tkinter-based interface for uploading test images and performing image-based inference, with support for comparing YOLOv5, YOLOv7, and YOLOv8 models using evaluation metrics such as precision, recall, and F1-score. The current implementation focuses on image-based inference rather than continuous real-time webcam or video-stream detection.</p>
 
+
+            <div class="project-evidence" aria-label="Automated Road Damage Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/road-damage-upload.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage upload evidence (opens in a new tab)"><img src="./images/evidence/road-damage-upload.png" alt="Road damage application upload interface"></a>
+                <a href="./images/evidence/road-damage-result.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage detection result (opens in a new tab)"><img src="./images/evidence/road-damage-result.png" alt="Road image with detected damage regions"></a>
+                <a href="./images/evidence/road-damage-details.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage detection details (opens in a new tab)"><img src="./images/evidence/road-damage-details.png" alt="Road damage detection details and confidence values"></a>
+              </div>
             <a href="https://automated-road-damage-jymhfucep3reckzxvycsft.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for Automated Road Damage Detection (opens in a new tab)">🚀 Live Demo →</a>
             <a href="https://github.com/Yuvaraj9121/Automated-Road-Damage" target="_blank" rel="noopener noreferrer" aria-label="Open Automated Road Damage Detection GitHub repository (opens in a new tab)">GitHub →</a>
+            </div>
           </div>
         </article>
         <article class="project-card project-card-ink reveal">
@@ -97,7 +110,18 @@
           <div>
             <h3>Fake Face Detection Using LBPNET</h3>
             <p>Developed an LBP-based CNN (LBPNET) model to classify face images as fake or non-fake. The system extracts Local Binary Pattern (LBP) texture features from input face images and uses a CNN classifier to identify whether the image belongs to the fake-face or non-fake-face class. The model is designed specifically for the dataset used in this project and should not be interpreted as a general-purpose deepfake detector.</p>
+
+            <div class="project-evidence" aria-label="Fake Face Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/fake-face-upload.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face upload evidence (opens in a new tab)"><img src="./images/evidence/fake-face-upload.png" alt="Fake face detection upload interface"></a>
+                <a href="./images/evidence/fake-face-prediction.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face prediction evidence (opens in a new tab)"><img src="./images/evidence/fake-face-prediction.png" alt="Fake face prediction result and confidence"></a>
+                <a href="./images/evidence/fake-face-evaluation.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face evaluation evidence (opens in a new tab)"><img src="./images/evidence/fake-face-evaluation.png" alt="Fake face evaluation metrics output"></a>
+                <a href="./images/evidence/fake-face-confusion-matrix.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face confusion matrix (opens in a new tab)"><img src="./images/evidence/fake-face-confusion-matrix.png" alt="Fake face evaluation confusion matrix"></a>
+              </div>
+            <a href="https://fake-imagedetection.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for Fake Face Detection Using LBPNET (opens in a new tab)">🚀 Live Demo →</a>
             <a href="https://github.com/Yuvaraj9121/Fake-Image_Detection" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
           </div>
         </article>
         <article class="project-card project-card-sky reveal">
@@ -105,8 +129,17 @@
           <img src="./images/image.3.png" alt="AI-assisted APT detection project interface">
           <div>
             <h3>AI-Assisted APT Detection (RANK)</h3>
-            <p>AI-Assisted APT Detection: Developed an AI-based system using MITRE ATT&CK, alert correlation, and incident graphs to detect and prioritize cyber threats.</p>
+            <p>AI-Assisted APT Detection (RANK) — Developed an AI-assisted cybersecurity system for detecting and prioritizing Advanced Persistent Threats (APTs) by correlating security alerts, analyzing incident relationships, and mapping threat activity to the MITRE ATT&CK framework. The system processes security events to identify suspicious patterns, generate incident insights, and prioritize threats using model-driven scoring and alert analysis. RANK provides a practical workflow for transforming raw security alerts into structured threat intelligence and actionable incident information.</p>
+
+            <div class="project-evidence" aria-label="AI-Assisted APT Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/rank-ai-app.png" target="_blank" rel="noopener noreferrer" aria-label="View RANK application evidence (opens in a new tab)"><img src="./images/evidence/rank-ai-app.png" alt="RANK application data interface"></a>
+                <a href="./images/evidence/rank-ai-result.png" target="_blank" rel="noopener noreferrer" aria-label="View RANK processed result evidence (opens in a new tab)"><img src="./images/evidence/rank-ai-result.png" alt="RANK incident summary and model features output"></a>
+              </div>
+            <a href="https://rank-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for AI-Assisted APT Detection (RANK) (opens in a new tab)">🚀 Live Demo →</a>
             <a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
           </div>
         </article>
       </div>

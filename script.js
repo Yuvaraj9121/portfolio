@@ -19,8 +19,12 @@ if (themeToggle) {
   );
 
   const themeLabel = themeToggle.querySelector('.theme-label');
+  const themeIcon = themeToggle.querySelector('.theme-icon');
   if (themeLabel) {
     themeLabel.textContent = initialTheme === 'dark' ? 'Light' : 'Dark';
+  }
+  if (themeIcon) {
+    themeIcon.textContent = initialTheme === 'dark' ? '☀' : '☾';
   }
 
   themeToggle.addEventListener('click', () => {
@@ -37,6 +41,9 @@ if (themeToggle) {
 
     if (themeLabel) {
       themeLabel.textContent = nextTheme === 'dark' ? 'Light' : 'Dark';
+    }
+    if (themeIcon) {
+      themeIcon.textContent = nextTheme === 'dark' ? '☀' : '☾';
     }
   });
 }
