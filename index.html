@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kudupudi Yuvaraj - developer portfolio">
+  <title>Kudupudi Yuvaraj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#about" aria-label="Kudupudi Yuvaraj home">
+        <span class="brand-mark">KY</span>
+        <span>Kudupudi Yuvaraj</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section container" id="about">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Hello, I’m Yuvaraj <span class="eyebrow-line"></span></p>
+        <h1>Building clear ideas into <em>useful</em> digital experiences.</h1>
+        <p class="hero-text">I’m a curious developer who enjoys turning thoughtful design and solid code into products people can actually use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View my work <span>↗</span></a>
+          <a class="text-link" href="#contact">Let’s talk <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="photo-frame"></div>
+        <div class="art-ring art-ring-one"></div>
+        <div class="art-ring art-ring-two"></div>
+        <div class="art-card">
+          <span class="art-label">Currently</span>
+          <strong>Learning.<br>Making.<br>Improving.</strong>
+          <!-- <span class="art-code">&lt;/&gt;</span> -->
+        </div>
+        <span class="art-dot dot-one"></span>
+        <span class="art-dot dot-two"></span>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I bring</p>
+          <h2>Skills with a practical edge.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-item reveal"><span class="skill-number">01</span><h3><a href="#projects">Frontend</a></h3><p>HTML, CSS, JavaScript, responsive interfaces, and usability-focused development, demonstrated by this portfolio.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">02</span><h3>Problem solving</h3><p>Breaking big ideas into simple, testable steps that keep projects moving.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">03</span><h3>Always learning</h3><p>Exploring new tools, patterns, and perspectives to make better work.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">04</span><h3><a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noopener noreferrer">Python</a></h3><p>Writing clean scripts and building practical solutions with Python, demonstrated by the RANK project.</p></article>
+          <article class="skill-item reveal"><span class="skill-number">05</span><h3>SQL</h3><p>Organizing, querying, and understanding data with relational databases.</p></article>
+          <!-- <article class="skill-item reveal"><span class="skill-number">06</span><h3>Vibe coding</h3><p>Exploring ideas quickly and creatively while turning concepts into working products.</p></article> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading project-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>A few things I’ve made.</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-card-saffron reveal">
+          <div class="project-top"><span>  Deep Learning</span><span>↗</span></div>
+          <img src="./images/image.1.webp" alt="Automated road damage detection interface">
+          <div>
+            <h3>Automated Road Damage Detection</h3>
+            <p>Developed an automated road damage detection system using YOLO-based deep learning models to identify longitudinal cracks, transverse cracks, alligator cracks, and potholes from UAV images. The application provides a Tkinter-based interface for uploading test images and performing image-based inference, with support for comparing YOLOv5, YOLOv7, and YOLOv8 models using evaluation metrics such as precision, recall, and F1-score. The current implementation focuses on image-based inference rather than continuous real-time webcam or video-stream detection.</p>
+
+
+            <div class="project-evidence" aria-label="Automated Road Damage Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/road-damage-upload.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage upload evidence (opens in a new tab)"><img src="./images/evidence/road-damage-upload.png" alt="Road damage application upload interface"></a>
+                <a href="./images/evidence/road-damage-result.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage detection result (opens in a new tab)"><img src="./images/evidence/road-damage-result.png" alt="Road image with detected damage regions"></a>
+                <a href="./images/evidence/road-damage-details.png" target="_blank" rel="noopener noreferrer" aria-label="View road damage detection details (opens in a new tab)"><img src="./images/evidence/road-damage-details.png" alt="Road damage detection details and confidence values"></a>
+              </div>
+            <a href="https://automated-road-damage-jymhfucep3reckzxvycsft.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for Automated Road Damage Detection (opens in a new tab)">🚀 Live Demo →</a>
+            <a href="https://github.com/Yuvaraj9121/Automated-Road-Damage" target="_blank" rel="noopener noreferrer" aria-label="Open Automated Road Damage Detection GitHub repository (opens in a new tab)">GitHub →</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card-ink reveal">
+          <div class="project-top"><span>  Tool</span><span>↗</span></div>
+          <img src="./images/image.2.png" alt="Fake face model detection interface">
+          <div>
+            <h3>Fake Face Detection Using LBPNET</h3>
+            <p>Developed an LBP-based CNN (LBPNET) model to classify face images as fake or non-fake. The system extracts Local Binary Pattern (LBP) texture features from input face images and uses a CNN classifier to identify whether the image belongs to the fake-face or non-fake-face class. The model is designed specifically for the dataset used in this project and should not be interpreted as a general-purpose deepfake detector.</p>
+
+            <div class="project-evidence" aria-label="Fake Face Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/fake-face-upload.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face upload evidence (opens in a new tab)"><img src="./images/evidence/fake-face-upload.png" alt="Fake face detection upload interface"></a>
+                <a href="./images/evidence/fake-face-prediction.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face prediction evidence (opens in a new tab)"><img src="./images/evidence/fake-face-prediction.png" alt="Fake face prediction result and confidence"></a>
+                <a href="./images/evidence/fake-face-evaluation.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face evaluation evidence (opens in a new tab)"><img src="./images/evidence/fake-face-evaluation.png" alt="Fake face evaluation metrics output"></a>
+                <a href="./images/evidence/fake-face-confusion-matrix.png" target="_blank" rel="noopener noreferrer" aria-label="View fake face confusion matrix (opens in a new tab)"><img src="./images/evidence/fake-face-confusion-matrix.png" alt="Fake face evaluation confusion matrix"></a>
+              </div>
+            <a href="https://fake-imagedetection.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for Fake Face Detection Using LBPNET (opens in a new tab)">🚀 Live Demo →</a>
+            <a href="https://github.com/Yuvaraj9121/Fake-Image_Detection" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card-sky reveal">
+          <div class="project-top"><span>Experiment</span><span>↗</span></div>
+          <img src="./images/image.3.png" alt="AI-assisted APT detection project interface">
+          <div>
+            <h3>AI-Assisted APT Detection (RANK)</h3>
+            <p>AI-Assisted APT Detection (RANK) — Developed an AI-assisted cybersecurity system for detecting and prioritizing Advanced Persistent Threats (APTs) by correlating security alerts, analyzing incident relationships, and mapping threat activity to the MITRE ATT&CK framework. The system processes security events to identify suspicious patterns, generate incident insights, and prioritize threats using model-driven scoring and alert analysis. RANK provides a practical workflow for transforming raw security alerts into structured threat intelligence and actionable incident information.</p>
+
+            <div class="project-evidence" aria-label="AI-Assisted APT Detection evidence">
+              <span class="evidence-label">Working evidence</span>
+              <div class="evidence-grid">
+                <a href="./images/evidence/rank-ai-app.png" target="_blank" rel="noopener noreferrer" aria-label="View RANK application evidence (opens in a new tab)"><img src="./images/evidence/rank-ai-app.png" alt="RANK application data interface"></a>
+                <a href="./images/evidence/rank-ai-result.png" target="_blank" rel="noopener noreferrer" aria-label="View RANK processed result evidence (opens in a new tab)"><img src="./images/evidence/rank-ai-result.png" alt="RANK incident summary and model features output"></a>
+              </div>
+            <a href="https://rank-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open live demo for AI-Assisted APT Detection (RANK) (opens in a new tab)">🚀 Live Demo →</a>
+            <a href="https://github.com/Yuvaraj9121/AI-Assisted-APT-Detection-RANK-" target="_blank" rel="noopener noreferrer">View project →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal"><p class="eyebrow">Start a conversation</p>
+            <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
+            <p>Tell me a little about what you’re building. Your note is saved locally in this browser only. It is not sent to me. To contact me directly, use the email address below.</p>
+            <a class="contact-email" href="mailto:kudupudiyuvaraj.4@gmail.com">kudupudiyuvaraj.4@gmail.com</a>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+          <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><span>© <span id="year"></span> Kudupudi Yuvaraj</span><span>Made with intention.</span></footer>
+</body>
+</html>">
+          
