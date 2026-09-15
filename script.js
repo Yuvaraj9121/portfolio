@@ -1,8 +1,6 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
-const navItems = document.querySelectorAll('.nav-link');
-const contactForm = document.querySelector('#contact-form');
-const formStatus = document.querySelector('#form-status');
+const navItems = document.querySelectorAll('.nav-links a');
 const themeToggle = document.querySelector('.theme-toggle');
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -20,6 +18,7 @@ if (themeToggle) {
 
   const themeLabel = themeToggle.querySelector('.theme-label');
   const themeIcon = themeToggle.querySelector('.theme-icon');
+
   if (themeLabel) {
     themeLabel.textContent = initialTheme === 'dark' ? 'Light' : 'Dark';
   }
@@ -70,113 +69,5 @@ if (menuToggle && navLinks) {
       item.classList.add('active');
       setMenu(false);
     });
-  });
-}
-
-// Contact form is intentionally local-only. It never sends data to a server.
-let database = null;
-
-const databaseRequest = indexedDB.open('yuvarajPortfolio', 1);
-
-databaseRequest.onupgradeneeded = (event) => {
-  const db = event.target.result;
-  if (!db.objectStoreNames.contains('messages')) {
-    db.createObjectStore('messages', {
-      keyPath: 'id',
-      autoIncrement: true
-    });
-  }
-};
-
-databaseRequest.onsuccess = (event) => {
-  database = event.target.result;
-};
-
-databaseRequest.onerror = () => {
-  if (formStatus) {
-    formStatus.textContent =
-      'Local storage is unavailable. Your message was not saved. Please email me directly.';
-  }
-};
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    if (!contactForm.checkValidity()) {
-      contactForm.reportValidity();
-      formStatus.textContent = 'Please correct the highlighted fields.';
-      return;
-    }
-
-    if (!database) {
-      formStatus.textContent =
-        'Local storage is unavailable. Your message was not saved. Please email me directly.';
-      return;
-    }
-
-    const sendButton = contactForm.querySelector('button[type="submit"]');
-    if (sendButton && sendButton.disabled) return;
-
-    const formData = new FormData(contactForm);
-    const message = {
-      name: String(formData.get('name') || '').trim(),
-      email: String(formData.get('email') || '').trim(),
-      message: String(formData.get('message') || '').trim(),
-      createdAt: new Date().toISOString()
-    };
-
-    if (!message.name || !message.email || !message.message) {
-      formStatus.textContent = 'Please complete all fields.';
-      return;
-    }
-
-    if (message.name.length > 120 || message.message.length > 5000) {
-      formStatus.textContent =
-        'Please keep your name under 120 characters and message under 5000 characters.';
-      return;
-    }
-
-    if (sendButton) {
-      sendButton.disabled = true;
-      sendButton.setAttribute('aria-busy', 'true');
-    }
-
-    formStatus.textContent = 'Saving your note locally…';
-
-    let transaction;
-    try {
-      transaction = database.transaction('messages', 'readwrite');
-      transaction.objectStore('messages').add(message);
-
-      transaction.oncomplete = () => {
-        formStatus.textContent =
-          'Your note was saved locally in this browser. It was not sent to me.';
-        contactForm.reset();
-
-        if (sendButton) {
-          sendButton.disabled = false;
-          sendButton.removeAttribute('aria-busy');
-        }
-      };
-
-      transaction.onerror = () => {
-        formStatus.textContent =
-          'The note could not be saved. Please try again or email me directly.';
-
-        if (sendButton) {
-          sendButton.disabled = false;
-          sendButton.removeAttribute('aria-busy');
-        }
-      };
-    } catch (error) {
-      formStatus.textContent =
-        'Local storage is unavailable. Your message was not saved. Please email me directly.';
-
-      if (sendButton) {
-        sendButton.disabled = false;
-        sendButton.removeAttribute('aria-busy');
-      }
-    }
   });
 }
